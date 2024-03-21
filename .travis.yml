@@ -4,7 +4,7 @@ dist: bionic
 matrix:
   fast_finish: true
   include:
-    - if: repo = duality-solutions/libbdaptorrent
+    - if: repo = zero-dynamics/libbdaptorrent
       env: variant=release sonar_scan=1 toolset=gcc
     - env: variant=release toolset=gcc check_headers=1 python=1
     - env: variant=test_debug crypto=openssl python=1 toolset=darwin ios=1
